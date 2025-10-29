@@ -86,7 +86,17 @@ header {
   inset: 0; 
 }
 
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
 
+/* 🔹 2. Evita el scroll horizontal global */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
 
 
@@ -98,6 +108,9 @@ header {
 @media (max-width: 768px) {
   .contenido {
     flex-direction: column; /* Pasa de fila a columna */
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* evita que flex genere scroll lateral */
   }
 
   /* Invertimos el orden */

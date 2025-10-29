@@ -47,7 +47,7 @@ export function cargarCapas(map) {
       source: 'infra_source',
       paint: {
         'circle-color': '#A3E4D7',
-        'circle-radius': 2,
+        'circle-radius': 4,
         'circle-stroke-width': 0.1,
         'circle-stroke-color': '#000000ff'
         }
